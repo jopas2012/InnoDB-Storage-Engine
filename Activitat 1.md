@@ -81,3 +81,21 @@
    
 
 ## Posa un exemple que produeix un DEADLOCK i mostra-ho al professor.
+    
+   L'exemple següent il·lustra com es pot produir un error quan una sol·licitud de bloqueig provoca un bloqueig. L'exemple inclou dos clients, A i B.
+
+   Primer, el client A crea una taula que conté una fila i després comença una transacció. Dins de la transacció, A obté un Sbloqueig a la fila seleccionant-la en mode de compartició:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158659538-c2b29160-821d-4e27-abe8-c147b98595a0.png)
+   
+   A continuació, el client B comença una transacció i intenta suprimir la fila de la taula:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158659629-7a49962a-3274-4f44-b3b4-8121ccf5477e.png)
+
+   L'operació d'eliminació requereix un Xbloqueig. El bloqueig no es pot concedir perquè és incompatible amb el Sbloqueig que té el client A, de manera que la sol·licitud passa a la cua de sol·licituds de bloqueig per als blocs de fila i client B.
+   
+   Finalment, el client A també intenta eliminar la fila de la taula:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158659751-b52c6315-c128-452c-89b1-22bec89c88ab.png)
+
+   El bloqueig es produeix aquí perquè el client A necessita un Xbloqueig per eliminar la fila. Tanmateix, aquesta sol·licitud de bloqueig no es pot concedir perquè el client B ja té una sol·licitud de Xbloqueig i està esperant que el client A l'alliberi.
