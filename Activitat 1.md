@@ -53,5 +53,31 @@
 
    
 ## A partir de MySQL apareixen els schemas de metadades i informació guardats amb InnoDB. Busca informació d'aquests schemas. Indica quin és l'objectiu de cadascun d'ells i posa'n un exemple d'ús.
+   
+   ### Information_schema
+   INFORMATION_SCHEMA proporciona l'accés a les metadades, és la base de dades on s'emmagatzema l'informació sobre totes les demés base de dades. També emmagatzema informació del servidor MySQL.
+   
+   Aquestes són algunes de les taules que conté:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158657920-57f7df5a-e017-450f-94b8-94356560e98c.png)
+
+   
+   ### Performance_schema
+   El PERFORMANCE_SCHEMA és una base de dades que en la que es pot consultar l'execució interna del servidor en temps d'execució i guarda dades del rendiment del servidor, podém consultar l'estat intern del servidor i o canviar parametres de configuració.
+   
+   Aquestes són algunes de les taules que conté:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158658117-8f67f40a-0e83-4268-85fb-af51856076cf.png)
+
+   
+   ### Mysql
+   L'esquema mysql és l'esquema del sistema. Conté taules que emmagatzemen la informació requerida pel servidor MySQL mentre s'executa.
+   
+   Aquestes són algunes de les taules que conté:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/158658894-39307c21-bc8c-4aeb-a235-e8f749ab3ad6.png)
+
+   
+   
 
 ## Posa un exemple que produeix un DEADLOCK i mostra-ho al professor.
