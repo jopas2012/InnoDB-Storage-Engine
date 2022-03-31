@@ -14,6 +14,7 @@
 
 
 3.    Quin/quins són els fitxers de dades? A on es troben i quin és la seva mida?
+   
    Al haber desactivat l'opció innodb_file_per_table el fitxer de dades ha cambiat i es troba en el ibdata1
     
    ![image](https://user-images.githubusercontent.com/61474562/158664069-7feedcc4-5e4c-4c5e-819b-36ac975e1222.png)
