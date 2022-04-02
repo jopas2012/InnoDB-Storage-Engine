@@ -14,25 +14,28 @@
    
    Creem el directori tablespaces:
    
-      sudo mkdir /tablespaces
-      sudo chown -R mysql:mysql /tablespaces
-      sudo chmod 751 /tablespaces
+      sudo mkdir /tspaces
+      sudo chown -R mysql:mysql /tspaces
+      sudo chmod 751 /tspaces
    
    Copiem el contingut del directori /var/lib/mysql al nou directori tablespaces:
    
-      cp -R -p /var/lib/mysql/* /tablespaces
+      cp -R -p /var/lib/mysql/* /tspaces
    
    Hem de cambiar la ruta del datadir en el fitxer de configuració /etc/my.cnf:
     
-    datadir=/tablespaces
+    datadir=/tspaces
     
-   ![image](https://user-images.githubusercontent.com/61474562/161386037-d409d809-2123-4e15-b2ba-3ad88d81779f.png)
+   ![image](https://user-images.githubusercontent.com/61474562/161386444-83b5990a-6ee8-4a83-a312-06fd5ed050a4.png)
+
     
    Iniciem el Servei MySQL:
     
     systemctl start mysql
     systemctl status mysql
-   
+      
+  ![image](https://user-images.githubusercontent.com/61474562/161386459-54a1f7ea-af37-4a0e-b24d-d3ecfdbe5efb.png)
+
    Si comprovem el contingut del nou directori podem veure que els tablespace s'han creat
    
    ![image](https://user-images.githubusercontent.com/61474562/160896697-1fded80d-a29e-4ef0-96c1-b8fc97671bcd.png)
