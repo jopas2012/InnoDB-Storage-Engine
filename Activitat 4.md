@@ -51,3 +51,10 @@
   
     INSERT INTO actor(actor_id,first_name,last_name) VALUE(1,'Paco','Tabaco');
 
+  ![image](https://user-images.githubusercontent.com/61474562/161387351-987cbb2e-1ae5-469d-93b4-01fd162fce66.png)
+
+  ![image](https://user-images.githubusercontent.com/61474562/161387370-e3fb80f4-a2eb-4755-b0f7-a7095d6183cb.png)
+  
+  Insert taula City:
+  
+    INSERT INTO city(city_id,city,country_id) VALUE(1,'Madrid','1');
