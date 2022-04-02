@@ -36,7 +36,9 @@
       
   ![image](https://user-images.githubusercontent.com/61474562/161386459-54a1f7ea-af37-4a0e-b24d-d3ecfdbe5efb.png)
 
-   Si comprovem el contingut del nou directori podem veure que els tablespace s'han creat
+   Comprovació:
    
-   ![image](https://user-images.githubusercontent.com/61474562/160896697-1fded80d-a29e-4ef0-96c1-b8fc97671bcd.png)
+   ![image](https://user-images.githubusercontent.com/61474562/161386570-b7bdd108-c2b1-4907-b45d-7838f28eb9d7.png)
+   
+   ![image](https://user-images.githubusercontent.com/61474562/161386506-e5893a0f-4337-4a6b-a01f-ead5c7cdbf31.png)
 
