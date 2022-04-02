@@ -33,4 +33,21 @@
     ALTER TABLE film_text TABLESPACE ts2;
     ALTER TABLE inventory TABLESPACE ts2;
     
-    
+  ![image](https://user-images.githubusercontent.com/61474562/161387095-d576e843-c019-4562-b7b9-a3222c556207.png)
+
+  Comprovem que s'han creat els fitxers .ibd:
+  
+  ![image](https://user-images.githubusercontent.com/61474562/161387148-5ed8777d-a5c3-4d01-aa0f-0a6f1ecead29.png)
+
+•	Comprova que pots realitzar operacions DML a les taules dels dos tablespaces.
+
+  Per comprovar-ho farem un insert a la taula actor i un altre a la taula city una de cada TABLESPACE:
+  
+  ![image](https://user-images.githubusercontent.com/61474562/161387256-83ab3078-1d05-4439-8b24-5c8d59353b8b.png)
+  
+  ![image](https://user-images.githubusercontent.com/61474562/161387274-062cfbf6-36f7-4c47-9798-75592985301e.png)
+
+  Insert taula Actor:
+  
+    INSERT INTO actor(actor_id,first_name,last_name) VALUE(1,'Paco','Tabaco');
+
