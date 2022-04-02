@@ -58,3 +58,7 @@
   Insert taula City:
   
     INSERT INTO city(city_id,city,country_id) VALUE(1,'Madrid','1');
+
+  ![image](https://user-images.githubusercontent.com/61474562/161387480-c45e4d06-a745-45a9-bfb4-a5385baeba0a.png)
+
+  ![image](https://user-images.githubusercontent.com/61474562/161387486-8688692f-22db-4ab2-a5dc-f967c2280c25.png)
