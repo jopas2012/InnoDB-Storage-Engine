@@ -41,13 +41,21 @@
         
         Aturem el servei Mysql:
         
+            sudo systemctl stop mysql
+        
         ![image](https://user-images.githubusercontent.com/61474562/161381920-9e159cf2-c08c-4ae8-9fb3-eab7d6fc44e9.png)
         
         Creem el directori discs-mysql i li assignem com a propietari l'usuari i grup mysql:
+        
+            sudo mkdir /discs-mysql
+            sudo chown -R mysql:mysql /discs-mysql
+            sudo chmod 750 /discs-mysql/
 
         ![image](https://user-images.githubusercontent.com/61474562/161381973-3b752839-2326-4aab-8948-42436846b5de.png)
         
         copiem recursivament el directori de la base de dades existent a /discs-mysql:
+        
+            cp -R -p /var/lib/mysql/* /discs-mysql
         
         ![image](https://user-images.githubusercontent.com/61474562/161382006-09230d5b-c316-46c4-b053-57aa076e069a.png)
         
@@ -56,10 +64,14 @@
         ![image](https://user-images.githubusercontent.com/61474562/161382289-f51a87d5-7ab3-4362-8778-3a4bd9b6ec9d.png)
         
         Iniciem el servei Mysql:
+        
+            systemctl start mysql
 
         ![image](https://user-images.githubusercontent.com/61474562/161382310-d44d9bb4-1cce-47b2-a21d-9e1df8de2a16.png)
         
         Comprovem la variable datadir i podem veure que la ubicació és /discs-mysql:
+        
+            SELECT @@datadir;
 
         ![image](https://user-images.githubusercontent.com/61474562/161382328-d6bdf703-2ad9-4c59-aa72-9d37b948b9b2.png)
         
