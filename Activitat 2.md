@@ -99,12 +99,37 @@
         
         ![image](https://user-images.githubusercontent.com/61474562/161382962-4d651ea9-3fca-4cf5-adfc-ec2c4b90bab0.png)
 
+        Esborrem els fitxers ibd:
         
+            sudo rm ibdata1
+            sudo rm ib_logfile0
+            sudo rm ib_logfile1
         
+        ![image](https://user-images.githubusercontent.com/61474562/161383054-379e5f72-9aa0-4ad5-92ba-c35c230df5ef.png)
         
+        Modifiquem el fitxer /etc/my.cnf amb la seguent configuració:
         
-            innodb_file_per_table=1
-            innodb_data_home_dir = /var/lib/mysql/discs-mysql
-            innodb_data_file_path=/var/lib/mysql/discs-mysql/disk1/primer:10M;/var/lib/mysql/discs-mysql/disk2/segon:10M:autoextend
+            innodb_data_home_dir=
+            innodb_data_file_path=disk1/primer:10M;disk2/segon:10M:autoextend
+            innodb_autoextend_increment=5M
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161383205-dc96ca1a-5a18-4805-a7b3-1c3028c27b9b.png)
 
+        Iniciem el servei Mysql:
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161383254-5533204e-e14b-44e1-aaa7-3258ad763392.png)
+
+        Comprovem la variable innodb_data_file_path:
+        
+            SHOW VARIABLES LIKE '%innodb_data_file_path%';
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161385519-d2ff1448-7cc0-4212-8716-07f22b724559.png)
+        
+        Comprovem la mida dels tablespace que hem configurat:
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161385595-b39c07d9-f275-4fa6-85f8-3bf0869fbc9f.png)
+
+        ![image](https://user-images.githubusercontent.com/61474562/161385644-0ec4d38f-5db9-4b86-9644-80d261358031.png)
+
+        
 
