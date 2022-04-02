@@ -82,6 +82,27 @@
       - /discs-mysql/disk1/primer fitxer de dades → simularà un disc dur
       - /discs-mysql/disk2/segon fitxer de dades → simularà un segon disc dur.
         
+        Aturem el servei Mysql:
+        
+            sudo systemctl stop mysql
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161381920-9e159cf2-c08c-4ae8-9fb3-eab7d6fc44e9.png)
+        
+        Creem els directoris /discs-mysql/disk1 /discs-mysql/disk2
+        
+            sudo mkdir /discs-mysql/disk1
+            sudo mkdir /discs-mysql/disk2
+            sudo chown -R mysql:mysql /discs-mysql/disk1
+            sudo chown -R mysql:mysql /discs-mysql/disk2
+            sudo chmod 751 /discs-mysql/disk1
+            sudo chmod 751 /discs-mysql/disk2
+        
+        ![image](https://user-images.githubusercontent.com/61474562/161382962-4d651ea9-3fca-4cf5-adfc-ec2c4b90bab0.png)
+
+        
+        
+        
+        
             innodb_file_per_table=1
             innodb_data_home_dir = /var/lib/mysql/discs-mysql
             innodb_data_file_path=/var/lib/mysql/discs-mysql/disk1/primer:10M;/var/lib/mysql/discs-mysql/disk2/segon:10M:autoextend
