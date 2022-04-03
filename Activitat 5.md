@@ -33,6 +33,11 @@
    iniciem el servei Mysql:
    
    ![image](https://user-images.githubusercontent.com/61474562/161435185-f9713c61-ef27-4e77-8ca9-b1d24b92997a.png)
+   
+   Comprovació mida dels fitxers log:
+   
+   ![image](https://user-images.githubusercontent.com/61474562/161436833-5e909d83-4a73-4cd0-a0c8-9d4a50051bb4.png)
+
 
 •  Com podem mirar el número de pàgines modificades (dirty pages)? I el número total de pàgines?
 
