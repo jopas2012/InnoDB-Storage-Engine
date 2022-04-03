@@ -39,4 +39,5 @@
    
    Comprovació dels fitxers creats en la base de dades CSV:
    
-   
+   ![image](https://user-images.githubusercontent.com/61474562/161436917-b35d19e2-b701-4341-a1cf-9078aa2bfbb6.png)
+    
