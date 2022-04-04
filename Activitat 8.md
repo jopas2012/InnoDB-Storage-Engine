@@ -22,9 +22,16 @@
   
     CREATE DATABASE ROCKS;
     SHOW DATABASES;
-    
+  
   ![image](https://user-images.githubusercontent.com/61474562/161582146-a0bc4e9d-7428-4871-847c-5c91a287c723.png)
-
+  
+  Creació 2 taules ROCKSDB:
+  
+    USE ROCKS;
+    CREATE TABLE prova1 (a INT NOT NULL, b CHAR(15) NOT NULL) ENGINE = RocksDB;
+    CREATE TABLE prova2 (a INT NOT NULL, b CHAR(15) NOT NULL) ENGINE = RocksDB;
+    
+  ![image](https://user-images.githubusercontent.com/61474562/161597007-68c31c11-96c4-40bc-a1cf-952f14d2e3db.png)
   
 • A quin directori es guarden els fitxers de dades? Fes un llistat de a on són els fitxers i què ocupen.
   
