@@ -12,7 +12,7 @@
   
     ps-admin --enable-rocksdb -u <mysql_admin_user> -p[mysql_admin_pass ]
   
-  
+  ![image](https://user-images.githubusercontent.com/61474562/161572593-f39b8d83-3ea6-4ad5-8fc3-e3da6e09f4c1.png)
   
 • Cal documentar els passos que has hagut de realitzar per preparar l'exemple: configuracions, instruccions DML, DDL, etc....
   
